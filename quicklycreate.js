@@ -4,13 +4,13 @@ const baseUrl = "https://yourteam.signrequest.com/api/v1";
 
 //transform File to base64
 
-const buffer = Buffer.from('demo_document.pdf', 'binary');
+const buffer = Buffer.from("demo_document.pdf", "binary");
 
 const dataFile = fs.readFileSync(buffer);
 
-const pdf = dataFile.toString('base64');
+const pdf = dataFile.toString("base64");
 
-console.log(pdf)
+console.log(pdf);
 
 const data = {
   file_from_url: "your_url_here",
